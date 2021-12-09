@@ -1,2 +1,2 @@
 # javascript-adventure-game
-This is the story of Juan, who got lost in the forest. He needs to make many decisions to find his way out. This game is coded using JavaScript.
+Enter the world of Runeterra and explore one of its many regions! Shurima, Noxus, Demacia, Ionia...can you make it all the way through? Test your knowledge.
