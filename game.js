@@ -1,25 +1,62 @@
-let adventureDescriptionText = document.querySelector(".adventure-description");
-let optionButtons = document.getElementsByClassName("button");
+console.log("script is loading");
 
-function updateAdventureText() {
-  adventureDescriptionText.innerText = textAdventure[0].text;
-}
+// select the container of the game description
+const descriptionText = document.querySelector(".adventure-description");
+const optionButtons = document.getElementsByClassName("button");
 
-function updateOptions() {
-  let i = 0;
-  for(i; i < optionButtons.length; i++) {
-    console.log(optionButtons[i]);
-    optionButtons[i].innerText = textAdventure[0].options[i];
-  }
-}
+
 
 const textAdventure = [
   {
     id: 1,
-    text: 'This is the adventure of Juan, who got lost in the forest when looking for a bird to photograph. Juan needs your help to find his way out. Choose one of the options below',
-    options: ["Head south and find the river" , "Go back to the bottom of the hill" ]
+    description:
+      "This is the adventure of Juan, who got lost in the forest when looking for a bird to photograph. Juan needs your help to find his way out. Choose one of the options below",
+    options: [
+      {
+        buttontext: "Head back to where you came from",
+        setState: { headback: true },
+        nexttext: 2,
+      },
+      {
+        buttontext: "Look up at the sky and head towards the sun",
+        message: console.log("Try again"),
+      },
+    ],
   },
-]
-
-updateAdventureText();
-updateOptions();
+  {
+    id: 2,
+    description:
+      "great, Juan was able to find his way back, but now he reliazes that its about to rain, what should Juan do now?",
+    options: [
+      {
+        buttontext: "Look for shelter",
+        setState: { headback: true },
+        nexttext: 3,
+      },
+      {
+        buttontext: "Continue heading back, and risk getting lost again",
+        message: console.log("Try again"),
+      },
+    ],
+  },
+  {
+    id: 3,
+    description:
+      "Juan is safe in the shelter. He will wait until it stops raining. What should Juan do",
+    options: [
+      {
+        buttontext: "Leave the cave as soon as it stops raining",
+        setState: { headback: true },
+      },
+      {
+        buttontext: "Wait until the sun comes out again and continue walking",
+        setState: { daylight: true },
+        nexttext: 4,
+      },
+    ],
+  },
+  {
+    id: 4,
+    message: "Thank you for helping Juan!",
+  },
+];
