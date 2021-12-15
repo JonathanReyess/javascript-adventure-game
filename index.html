@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-    <html>
-        <script defer src="game.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" type="css" href="https://github.com/JonathanReyess/javascript-adventure-game/blob/main/style.css">
-        <title>Runeterra's Query</title>?
-      <body>
-        <div class="container">
-            <div id="text"><h1>Runeterra's Query</h1></div>
-                <p>Enter the world of Runeterra and explore one of its many regions! Shurima, Noxus, Demacia, Ionia...can you make it all the way through? Test your knowledge. </p>
-                    <div id="option-buttons" class="btn-grid">
-                <button class="btn1">Noxus</button>
-                <button class="btn2">Shurima</button>
-                <button class="btn3">Demacia</button>
-                <button class="btn4">Ionia</button>
-            
-          </div>
-        </div>
-      </body>
-      </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Runeterra's Query</title>
+  <link rel="stylesheet" href="runeterra.css">
+</head>
+
+<body>
+  <div class="container">
+    <img class="profile" src="C:\Users\jonat\Desktop\Javascript Adventure Game\Expedition_FAQ_Header.jpg">
+    <h1>Runeterra's Query</h1>
+    <p class="adventure-description">Enter the world of Runeterra and explore one of its many regions! Shurima, Noxus, Demacia, Ionia...can you make it all the way through? Test your knowledge.</p>
+    <div id="option-buttons" class="buttons-grid">
+      <button class="button" id="first_btn" onclick="onNextOption(event)"></button>
+      <button class="button" id="second_btn" onclick="onPlayAgain(event)"></button>
+    </div>
+  </div>
+  <script src="runeterra.js"></script>
+</body>
+</html>
