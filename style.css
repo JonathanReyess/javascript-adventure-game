@@ -10,6 +10,14 @@
     background-image: url(https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt9d0c487b98ba6b42/60ee0ffb975ffd4ff25ec2f5/noxus_splash.jpg);
   }
 
+  .profile {
+    width: 600px;
+    max-width: 80%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
   div {
     text-align: center;
   }
@@ -23,7 +31,7 @@
     box-shadow: 0 0 10px 2px;
   }
   
-  .btn-grid {
+  .buttons-grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 15px;
@@ -31,7 +39,7 @@
     margin-bottom: 20px;
   }
   
-  .btn1 {
+  .first_btn {
     background-color: maroon ;
     border: 2px solid black;
     border-radius: 15px;
@@ -69,12 +77,12 @@
   
   
 
-  .btn1:hover {
+  .first_btn:hover {
     background-color: #c02823;
     color: white;
   }
   
-  .btn1:active {
+  .first_btn:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
